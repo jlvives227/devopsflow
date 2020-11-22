@@ -1,13 +1,11 @@
-# Some changes made
-
-language: generic
 sudo: required
+language: generic
 
 services:
   - docker
 
 before_install:
-  - docker build -t jvives/docker-react -f Dockerfile.dev .
+  - docker build -t stephengrider/docker-react -f Dockerfile.dev .
 
-script: 
-  - docker run -e CI=true jvives/docker-react npm run test
+script:
+  - docker run -e CI=true stephengrider/docker-react npm run test
