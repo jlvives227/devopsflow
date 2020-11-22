@@ -1,3 +1,5 @@
+# Adding some comments
+
 FROM node:alpine
 
 WORKDIR '/app'
